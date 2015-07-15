@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you come from?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoK-oV-FBs">
+                                <rect key="frame" x="40" y="40" width="521" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcw-IH-VDr">
+                                <rect key="frame" x="227" y="252" width="147" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="ZmY-8U-s5G"/>
+                                    <constraint firstAttribute="height" constant="95" id="wIu-7h-hWG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Find out!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2qL-Rr-Yde" kind="show" identifier="City" id="vue-OJ-bqJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uoK-oV-FBs" secondAttribute="bottom" constant="509" id="4Da-Xe-CmN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vcw-IH-VDr" secondAttribute="bottom" constant="253" id="CgP-Nb-qad"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vcw-IH-VDr" secondAttribute="bottom" constant="253" id="LFn-LU-rzW"/>
+                            <constraint firstItem="uoK-oV-FBs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="PQ7-fi-h3n"/>
+                            <constraint firstItem="uoK-oV-FBs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZZ-kD-JdV"/>
+                            <constraint firstItem="vcw-IH-VDr" firstAttribute="centerX" secondItem="uoK-oV-FBs" secondAttribute="centerX" id="m7e-bq-W4B"/>
+                            <constraint firstItem="uoK-oV-FBs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIc-Cr-9d9"/>
+                            <constraint firstItem="uoK-oV-FBs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="sL6-iX-QWW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pIc-Cr-9d9"/>
+                                <exclude reference="4Da-Xe-CmN"/>
+                                <exclude reference="CgP-Nb-qad"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="427"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="px7-ES-p8v">
+            <objects>
+                <viewController id="2qL-Rr-Yde" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LbG-Tt-Reh"/>
+                        <viewControllerLayoutGuide type="bottom" id="4av-fm-rgS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aW9-gb-SlT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your city is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGH-mj-goY">
+                                <rect key="frame" x="16" y="28" width="568" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PGH-mj-goY" firstAttribute="trailing" secondItem="aW9-gb-SlT" secondAttribute="trailingMargin" id="4oi-UE-cFO"/>
+                            <constraint firstItem="4av-fm-rgS" firstAttribute="top" secondItem="PGH-mj-goY" secondAttribute="bottom" constant="532" id="FBH-MU-ea2"/>
+                            <constraint firstItem="PGH-mj-goY" firstAttribute="top" secondItem="LbG-Tt-Reh" secondAttribute="bottom" constant="8" symbolic="YES" id="P0d-lR-XMo"/>
+                            <constraint firstItem="PGH-mj-goY" firstAttribute="leading" secondItem="aW9-gb-SlT" secondAttribute="leadingMargin" id="p8h-zh-dfc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gqj-WU-4xi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="427"/>
+        </scene>
+    </scenes>
+</document>
